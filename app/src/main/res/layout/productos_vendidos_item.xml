@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ImagenProductoVendido"
+        android:layout_width="100sp"
+        android:layout_height="165sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NombreProductoVendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/aclonica"
+        android:text="Nombre: Aguila"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImagenProductoVendido"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PrecioNormalProductoVendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/aclonica"
+        android:text="Precio: $1200"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImagenProductoVendido"
+        app:layout_constraintTop_toBottomOf="@+id/NombreProductoVendido" />
+
+    <TextView
+        android:id="@+id/CantidadProductoVendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/aclonica"
+        android:text="Cantidad: 2"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImagenProductoVendido"
+        app:layout_constraintTop_toBottomOf="@+id/PrecioNormalProductoVendido" />
+
+    <TextView
+        android:id="@+id/TotalProductoVendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/aclonica"
+        android:text="Total: $2400"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImagenProductoVendido"
+        app:layout_constraintTop_toBottomOf="@+id/CantidadProductoVendido" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RegistroVentasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="70sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha "
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btnSeleccionarFecha"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/lupa" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20sp">
+
+            <TextView
+                android:id="@+id/FechaSeleccionada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/InicioTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/FinTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fin: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/BaseCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Base Caja: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/CobroEfectivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cobro Efectivo: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/EfectivoContado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo Contado: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/EfectivoTeorico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo Teorico: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/Descuadre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descuadre: "
+                android:fontFamily="@font/aclonica"
+                android:textSize="17sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/TxtBilletesContados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billetes Contados:"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/Billetes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25sp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete2000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB2000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x20"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete5000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB5000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete10000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB10000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Billetes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25sp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete20000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB20000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x20"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete50000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB50000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80sp"
+                        android:layout_height="45sp"
+                        android:src="@drawable/billete100000"/>
+
+                    <TextView
+                        android:id="@+id/TxtB100000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TxtMonedasContadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monedas Contadas:"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/Monedas1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25sp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/moneda_50"/>
+
+                    <TextView
+                        android:id="@+id/TxtM50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x20"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/moneda_100"/>
+
+                    <TextView
+                        android:id="@+id/TxtM100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/moneda_200"/>
+
+                    <TextView
+                        android:id="@+id/TxtM200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Monedas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25sp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/moneda_500"/>
+
+                    <TextView
+                        android:id="@+id/TxtM500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="50sp"
+                        android:src="@drawable/moneda_1000"/>
+
+                    <TextView
+                        android:id="@+id/TxtM1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x21"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TxtVentasRealizadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ventas Realizadas:"
+                android:fontFamily="@font/aclonica"
+                android:textSize="23sp"
+                android:layout_marginTop="20sp"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RevVentasRealizadas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_marginTop="100sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

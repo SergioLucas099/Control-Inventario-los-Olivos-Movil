@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesEditarProducto">
+
+    <ImageView
+        android:id="@+id/CerrarDetallesEditarProductos"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/baseline_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BorrarProductoBD"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/EditarImagenProducto"
+        android:layout_width="200sp"
+        android:layout_height="250sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditarNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Nombre"
+        android:inputType="text"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarImagenProducto" />
+
+    <EditText
+        android:id="@+id/EditarPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Editar Precio"
+        android:inputType="number"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarNombreProducto" />
+
+    <TextView
+        android:id="@+id/CategoriaSaleccionada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Categoria seleccionada: "
+        android:textSize="17sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditarPrecioProducto" />
+
+    <Spinner
+        android:id="@+id/SpinnerEditarCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoriaSaleccionada" />
+
+    <TextView
+        android:id="@+id/TextoCategoriaProductoEditar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoriaSaleccionada" />
+
+    <Button
+        android:id="@+id/BtnActualizarProducto"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_redondear"
+        android:backgroundTint="@color/marron"
+        android:fontFamily="@font/aclonica"
+        android:text="Editar Producto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerEditarCategoria" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
